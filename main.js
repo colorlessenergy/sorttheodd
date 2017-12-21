@@ -25,6 +25,11 @@
 
 
  function sortArray(arr) {
+
+    if (arr.length === 0) {
+        return [];
+    }
+
     let oddArray = [];
 
     // sort all odd numbers out of array into a new array
@@ -49,4 +54,4 @@
     });    
  }
 
- sortArray([5, 3, 2, 8, 1, 4]);
+console.log(sortArray([5, 3, 2, 8, 1, 4]), sortArray([]));
